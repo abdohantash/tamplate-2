@@ -17,8 +17,8 @@ nav.main-menu .megamenu-content {
 }
 
 nav.main-menu .mega-menu-item.megamenu-fw .mega-submenu {
-    left: 0;
     right: 0;
+    left: 0;
 }
 
 nav.main-menu ul {
@@ -42,7 +42,7 @@ nav.main-menu {
 }
 
 nav.main-menu li ul.mega-submenu {
-    text-align: left;
+    text-align: right;
     position: absolute;
     visibility: hidden;
     display: block;
@@ -50,7 +50,7 @@ nav.main-menu li ul.mega-submenu {
     line-height: 14px;
     margin: 0;
     list-style: none;
-    left: 0;
+    right: 0;
     border-radius: 0;
     -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
@@ -104,7 +104,7 @@ nav.main-menu ul.menu li ul.mega-submenu li a:before {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -15px;
+    right: -15px;
     display: block;
     border-radius: 0px;
     background-color: #f1f4f9;
@@ -114,7 +114,7 @@ nav.main-menu ul.menu li ul.mega-submenu li a:before {
     z-index: -1;
     -webkit-transition: width .5s linear;
     transition: width .5s linear;
-    border-left: 3px solid #ff5e14;
+    border-right: 3px solid #ff5e14;
 }
 
 nav.main-menu ul.menu li ul.mega-submenu li.active > a {
@@ -126,7 +126,7 @@ nav.main-menu ul.menu li ul.mega-submenu li.active > a:before,
 nav.main-menu ul.menu li ul.mega-submenu li.active > ul.mega-submenu li.active a:before {
     opacity: 1;
     width: 100%;
-    left: 0;
+    right: 0;
 }
 
 ul.menu-col li a {
@@ -145,14 +145,14 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 =================================*/
 @media (min-width:1200px) {
     nav.main-menu li.mega-menu-item ul.mega-submenu li ul {
-        left: 100%;
+        right: 100%;
         top: 0;
         border-top: 0;
     }
 
     nav.main-menu li.mega-menu-item:last-child > ul {
-        right: 0;
-        left: auto;
+        left: 0;
+        right: auto;
     }
 
     nav.main-menu ul.menu > li > a {
@@ -209,7 +209,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
     position: absolute;
     content: "\f107";
     font-family: 'Font Awesome 5 Free';
-    margin-left: 4px;
+    margin-right: 4px;
     margin-top: 2px;
     opacity: 1;
     color: rgba( 255,255,255 , 0.50);
@@ -222,7 +222,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
     nav.main-menu li.mega-menu-item ul.mega-submenu li.mega-menu-item > a.mega-menu-link:after {
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
-        float: right;
+        float: left;
         content: "\f105";
         margin-top: 0;
     }
@@ -269,7 +269,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
 @media (max-width:1199px) {
     .menubar {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         bottom: 0;
         z-index: 9;
@@ -339,8 +339,8 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
         box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
         z-index: 100;
         top: 100%;
-        left: 0;
         right: 0;
+        left: 0;
         border-top: 3px solid var(--skin-color);
         background-color: #fff;
     }
@@ -362,7 +362,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
         padding: 15px 15px;
         line-height: 20px;
         border-top: 1px solid rgba(123, 128, 149, 0.15);
-        text-align: left;
+        text-align: right;
         transition: all .4s;
     }
 
@@ -385,9 +385,9 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
     nav.main-menu li.mega-menu-item a.mega-menu-link:after {
         font-family: 'Font Awesome 5 Free';
         content: "\f107";
-        float: right;
+        float: left;
         font-size: 16px;
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     nav.main-menu li.mega-menu-item:first-child a.mega-menu-link:after {
@@ -413,7 +413,7 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
         border: none;
         transform: unset;
         transition: unset;
-        padding: 0 0 10px 15px;
+        padding: 0 15px 10px 0;
         -moz-box-shadow: 0px 0px 0px;
         -webkit-box-shadow: 0px 0px 0px;
         -o-box-shadow: 0px 0px 0px;
@@ -449,11 +449,11 @@ ul.menu-col li a:hover, ul.menu-col li a:focus {
     nav.main-menu .mega-menu-item .megamenu-content .col-menu .title:before {
         font-family: 'Font Awesome 5 Free';
         content: "\f105";
-        float: right;
+        float: left;
         font-size: 16px;
-        margin-left: 10px;
+        margin-right: 10px;
         position: relative;
-        right: 0;
+        left: 0;
     }
 
     nav.main-menu .mega-menu-item .megamenu-content .col-menu:last-child ul.menu-col li:last-child a {
